@@ -1,5 +1,5 @@
 #!/bin/bash
-Person1=lokesh
+Person1=renuka
 Person2=rakesh
 
 echo "Hi $Person1 how are you"
