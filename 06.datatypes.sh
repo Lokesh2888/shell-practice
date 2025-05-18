@@ -6,4 +6,4 @@ Number2=200
 Timestamp=$(date)
 echo "Script executed time $Timestamp"
 
-SUM=$Number1+$Number2
+SUM=$(($Number1+$Number2))
