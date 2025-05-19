@@ -14,5 +14,5 @@ if [ $? -eq 0 ]
 then
    echo "Installing MYSQL is.... SUCCESS"
 else
-   echo "Installing MYSQL is.... FAILURE
+   echo "Installing MYSQL is.... FAILURE"
 fi
