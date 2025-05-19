@@ -8,7 +8,7 @@ then
    exit 1 #give other than 0 till 127 to exit the script
 fi
 
-dnf install mysql -y
+dnf install mysqlwedds -y
 
 if [ $? -eq 0 ]
 then
