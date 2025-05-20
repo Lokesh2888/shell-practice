@@ -21,40 +21,31 @@ VALIDATE(){
 }
 
 dnf list installed mysql
-
-#check already installed or not. if installed $? is 0, then 
-#If not installed $? is not 0. expression is true.
 if [ $? -ne 0 ]
 then
    echo "MYSQL is not installed...and it is going to INSTALL"
    dnf install mysql -y
-   VALIDATE $? "MYSQL"
+   VALIDATE $1 "MYSQL"
 else
    echo "MYSQL is already INSTALLED...nothing to do" 
 fi
 
 dnf list installed paython3
-
-#check already installed or not. if installed $? is 0, then 
-#If not installed $? is not 0. expression is true.
 if [ $? -ne 0 ]
 then
    echo "python3 is not installed...and it is going to INSTALL"
    dnf install python3 -y
-   VALIDATE $? "python3"
+   VALIDATE $1 "python3"
 else
    echo "python3 is already INSTALLED...nothing to do"
 fi
 
 dnf list installed nginx
-
-#check already installed or not. if installed $? is 0, then 
-#If not installed $? is not 0. expression is true.
 if [ $? -ne 0 ]
 then
    echo "nginx is not installed...and it is going to INSTALL"
    dnf install nginx -y
-   VALIDATE $? "nginx"
+   VALIDATE $1 "nginx"
 else
    echo "nginx is already INSTALLED...nothing to do"
 fi
